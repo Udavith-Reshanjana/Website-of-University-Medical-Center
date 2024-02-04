@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
     <link rel="icon" href="images\logo.png">
@@ -30,14 +30,17 @@
                     <table cellspacing="20">
                         <tr>
                             <th>Username: </th>
-                            <td><input type="text" name="username"></td>
+                            <td><input type="text" name="username" id="username" autocomplete="username"></td>
                         </tr>
                         <tr>
                             <th>Password: </th>
-                            <td><input type="password" name="password"><br></td>
+                            <td><input type="password" name="password" id="password" autocomplete="off"><br></td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center"><button onclick="isEmpty()">LOGIN</button></td>
+                            <td colspan="2" align="center">
+                                <button type="reset" style="background-color: red;">RESET</button>
+                                <button type="submit" onclick="isEmpty()">LOGIN</button>
+                            </td>
                         </tr>
                     </table>
                 </form> 
