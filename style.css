@@ -10,7 +10,7 @@ body
 }
 #copyrightsTxt
 {
-    background-color: gray;
+    background-color: #504E4E;
     color: white;
     text-align: center;
     margin: 0;
@@ -199,11 +199,12 @@ header p
     height: 35px;
     float: center;
     margin-top: 4%;
-    background-color: purple;
+    background-color: #5271FF;
     color: white;
     border: 0;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 /* main */
