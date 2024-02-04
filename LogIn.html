@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
-    <link rel="text/stylesheet" href="style.css">
+    <link rel="icon" href="images\logo.png">
+    <link rel="stylesheet" href="style.css">
     <style></style>
     <script src="javaScript.js"></script>
 </head>
     <body>
-        <header></header>  
-        
-        <footer></footer>
+        <header>
+            <p class="loginHeader">
+                <table class="LoginHeaderCont">
+                    <tr>
+                        <td colspan="2"><img src="images\logo.png" alt="UOK Logo" id="LoginHeaderImg"></td>
+                        <td>
+                            <span id="txt1">Medical Center</span><br>
+                            <span id="txt2">University Of Kelaniya</span>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </header>
+        <center>
+            <p id="logintxt">LOGIN</p>
+            <div class="logincont"> 
+                <form action="" method="post">
+                    <table cellspacing="20">
+                        <tr>
+                            <th>Username: </th>
+                            <td><input type="text" name="username"></td>
+                        </tr>
+                        <tr>
+                            <th>Password: </th>
+                            <td><input type="password" name="password"><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><button>LOGIN</button></td>
+                        </tr>
+                    </table>
+                </form> 
+            </div>
+        </center>
+        <footer>
+			<p id="copyrightsTxt">&copy; 2024 <strong>University of Kelaniya</strong>, Designed By Group 03</p>
+		</footer>
     </body>
 </html>

@@ -1,0 +1,87 @@
+/* common */
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#copyrightsTxt
+{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+/* login */
+.loginHeader
+{
+   margin: 0; 
+   padding: 0;
+}
+.LoginHeaderCont
+{
+    background-color: maroon;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+#LoginHeaderImg
+{
+    width: 15%;
+    height: 15%;
+    margin: 10px;
+}
+#txt1, #txt2
+{
+    text-align: left;
+    color: white;
+}
+#txt1
+{
+    font-size: xx-large;
+}
+#logintxt
+{
+    color: maroon;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+.logincont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	border: 3px solid maroon;
+    border-radius: 40px;
+    margin: 7%;
+    padding: 10%;
+	background-color: rgba(0, 0, 0, 0.2);
+    width: 30%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+.logincont input
+{
+    width: 90%;
+    height: 20px;
+}
+.logincont button
+{
+    width: 40%;
+    height: 35px;
+    float: center;
+    margin-top: 4%;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* main */
