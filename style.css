@@ -1,4 +1,8 @@
 /* common */
+a
+{
+    text-decoration: none;
+}
 body
 {
     margin: 0;
@@ -11,6 +15,59 @@ body
     text-align: center;
     margin: 0;
     padding: 5px;
+}
+footer
+{
+    background-color: maroon;
+}
+.footerTable
+{
+    color: white;
+	width: 100%;
+	text-align: center;
+}
+#footerUokLogo
+{
+	border-radius: 50%;
+	border: 2px solid maroon;
+}
+#contactIco
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid white;
+	float: center;
+	margin-right: 10px;
+}
+.footerTable ul {
+    list-style: none;
+	text-align: left;
+}
+.footerTable li a
+{
+    color: white;
+	display: block;
+	padding: 10;
+}
+.footerTable li a
+{
+    padding-bottom: 20%;
+}
+.footerTable th
+{
+    padding-top: 30px;
+}
+#comtactInfo
+ {
+	display: block;
+	padding: 15;
+	margin-left: 10;
+}
+#footerUokLogo
+{
+    width: 200px;
+    height: 200px;
 }
 
 /* login */
