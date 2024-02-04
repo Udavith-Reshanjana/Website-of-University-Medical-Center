@@ -150,8 +150,8 @@ header p
 }
 #LoginHeaderImg
 {
-    width: 15%;
-    height: 15%;
+    width: 150px;
+    height: 150px;
     margin: 10px;
 }
 #txt1, #txt2
