@@ -42,7 +42,7 @@ header p
 {
 	width: 150px;
 	height: 150px;
-    float: middle;
+    margin-left: 0;
 }
 .headerTable
 {
