@@ -16,9 +16,73 @@ body
     margin: 0;
     padding: 5px;
 }
-footer
+header, footer
 {
     background-color: maroon;
+}
+.header, .headerTable
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+header p
+{
+    margin: 0;
+}
+#headTxt
+{
+	color: white;
+	font-weight: bold;
+	letter-spacing: 20px;
+	font-size: 50px;
+	font-family: fantasy;
+    text-align: center;
+}
+#headerLogo
+{
+	width: 150px;
+	height: 150px;
+    float: middle;
+}
+.headerTable
+{
+	width: 100%;
+	color: white;
+}
+.subHeader
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.subHeader ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-bottom: -5px;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: yellow;
+}
+.subHeader ul li
+{
+	display: inline-block;
+	padding-left: 15%;
+	margin-left: 2%;
+}
+.subHeader a
+{
+	color: maroon;
+	display: block;
+	padding: 10px;
+    font-weight: bolder;
+}
+.subHeader a:hover
+{
+	background-color: red;
+    padding: 10px;
 }
 .footerTable
 {
@@ -139,6 +203,7 @@ footer
     color: white;
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* main */
