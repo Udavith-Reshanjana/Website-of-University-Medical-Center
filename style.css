@@ -114,21 +114,26 @@ header p
 	width: 100%;
 	text-align: center;
 }
-#footerUokLogo
+#contactIco 
 {
-	border-radius: 50%;
-	border: 2px solid maroon;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 10 auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
-#contactIco
+.footerTable
 {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 1px solid white;
-	float: center;
-	margin-right: 10px;
+    width: 100%;
 }
-.footerTable ul {
+.footerTable th
+{
+    font-size: large;
+}
+.footerTable ul 
+{
     list-style: none;
 	text-align: left;
 }
@@ -142,20 +147,59 @@ header p
 {
     padding-bottom: 20%;
 }
-.footerTable th
+.footerTable tr th
 {
     padding-top: 30px;
+    float: center;
 }
 #comtactInfo
- {
+{
 	display: block;
 	padding: 15;
 	margin-left: 10;
 }
-#footerUokLogo
+.questions
 {
-    width: 200px;
-    height: 200px;
+   margin-left: 15%;
+}
+.questions li
+{
+   margin-bottom: 40px;
+}
+.information
+{
+    margin-left: 9%;
+}
+#fb, #insta, #yt, #twitter, #linkedin, #tiktok
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+#fb
+{
+  background: url("images/socialmedia.jpg") -40px -30px;
+}
+#insta
+{
+  background: url("images/socialmedia.jpg") -209px -30px;
+}
+#yt
+{
+  background: url("images/socialmedia.jpg") -546px -30px;
+}
+#twitter
+{
+  background: url("images/socialmedia.jpg") -290px -30px;
+}
+#linkedin
+{
+  background: url("images/socialmedia.jpg") -460px -30px;
+}
+#tiktok
+{
+  background: url("images/socialmedia.jpg") -546px -200px;
 }
 
 /* login */
