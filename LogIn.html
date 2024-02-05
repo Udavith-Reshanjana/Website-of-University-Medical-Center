@@ -26,7 +26,7 @@
         <center>
             <p id="logintxt">LOGIN</p>
             <div class="logincont"> 
-                <form action="" method="post">
+                <form action="template.html" method="post" name="loginForm" onsubmit="return isEmpty()">
                     <table cellspacing="20">
                         <tr>
                             <th>Username: </th>
@@ -39,7 +39,7 @@
                         <tr>
                             <td colspan="2" align="center">
                                 <button type="reset" style="background-color: red;">CLEAR</button>
-                                <button type="submit" onclick="isEmpty()">LOGIN</button>
+                                <button type="submit">LOGIN</button>
                             </td>
                         </tr>
                     </table>
