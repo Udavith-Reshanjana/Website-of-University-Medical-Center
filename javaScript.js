@@ -28,6 +28,8 @@ function isEmpty() {
 function clearMeInLogIn() {
     var usernameField = document.getElementById("username");
     var passwordField = document.getElementById("password");
+    usernameField.style.backgroundColor = "#FFFFFF";
+    passwordField.style.backgroundColor = "#FFFFFF";
     usernameField.value = "";
     passwordField.value = "";
     usernameField.focus();
