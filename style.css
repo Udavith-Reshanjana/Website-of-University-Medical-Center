@@ -224,6 +224,7 @@ p.contactdata{
 
 .footlinks a:hover {
 	color:black;
+	font-size:18px;
 	text-decoration:underline;
 	background-color:white;
 }
