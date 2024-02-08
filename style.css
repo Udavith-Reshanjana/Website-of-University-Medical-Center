@@ -247,6 +247,16 @@ table.contactinfo {
 
 
 /* login */
+
+body.login {
+	background:url("images/login/bg2.jpeg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:0 100%;
+	background-size:100% 170%;
+
+}
+
 .loginHeader
 {
    margin: 0; 
@@ -290,9 +300,16 @@ table.contactinfo {
     letter-spacing: 20px;
     font-size: 50px;
     margin-bottom: 2%;
+	background-color:white;
 }
+
+table.content {
+	font-size:20px;
+}
+
 .logincont
 {
+	font-size:25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,20 +320,23 @@ table.contactinfo {
     padding: 10%;
 	background-color: rgba(0, 0, 0, 0.2);
     width: 30%;
-    padding-top: 3%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     margin-top: 2%;
     margin-bottom: 6%;
 }
 .logincont input
 {
+	font-size:25px;
     width: 90%;
-    height: 20px;
+    height: 35px;
 }
+
 .logincont button
 {
+	font-size:25px;
     width: 40%;
-    height: 35px;
+    height: 45px;
     float: center;
     margin-top: 4%;
     background-color: #5271FF;
@@ -326,5 +346,51 @@ table.contactinfo {
     cursor: pointer;
     margin-left: 10px;
 }
+
+.logincont button:hover
+{
+	border: 2px solid maroon;
+}
+
+
+/* Home */
+
+div.homecoontent {
+	width:100%;
+	height:700px; 
+	margin-bottom:-16px;
+}
+
+div.homeimg {
+	height:100%;
+	width:50%;
+	float:left; 
+	align:center
+}
+
+div.hometext {
+	height: 100%; 
+	padding:0 5% 0 5%;
+	width: 40%; 
+	float: left; 
+	text-align: center; 
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+    justify-content: center; 
+}
+	
+p.homehead {
+	font-size:40px;
+	letter-spacing:10px;
+	font-weight:600;
+	display:block;
+}
+
+p.text {
+    text-align: center; 
+	font-size:30px;
+}
+
 
 /* main */
