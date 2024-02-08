@@ -1,3 +1,9 @@
+// common
+function verifyBeforeLeave() {
+    var confirmValue = confirm("Do you want to leave this page ?");
+    return confirmValue;
+}
+
 // login
 function isEmpty() {
     var usernameField = document.getElementById("username");
@@ -36,3 +42,7 @@ function clearMeInLogIn() {
     return false;
 }
 
+// service
+// function name() {
+    
+// }

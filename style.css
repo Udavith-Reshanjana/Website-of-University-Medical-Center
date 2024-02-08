@@ -323,22 +323,23 @@ table.contactinfo
 }
 
 /* home */
-div.homecoontent {
+div.homecoontent 
+{
 	width:100%;
 	height: 700px; 
 	margin-bottom:-16px;
     display: block;
     margin-left: -5%;
 }
-
-div.homeimg {
+div.homeimg 
+{
 	height:100%;
 	width:50%;
 	float:left; 
 	margin: 0 auto;
 }
-
-div.hometext {
+div.hometext 
+{
 	height: 100%; 
 	padding:0 5% 0 5%;
 	width: 40%; 
@@ -348,58 +349,59 @@ div.hometext {
 	align-items: center;
 	flex-direction: column;
     justify-content: center;
-}
-	
-p.homehead {
+}	
+p.homehead 
+{
 	font-size:40px;
 	letter-spacing:10px;
 	font-weight:600;
 	display:block;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-p.text {
+p.text 
+{
     text-align: center; 
 	font-size:20px;
     line-height: 35px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /* Services */
-/* div.scontent {
+div.scontent 
+{
 	height:800px;
 	width:100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
-
-div.shead {
-	height:25%;
+div.shead 
+{
+	height:30%;
 	width:100%;
 }
-
-div.shead img {
+div.shead img 
+{
 	margin-top:-50px;
 	margin-bottom:-50px;
 }
-
-div.servielist {
+div.servielist 
+{
 	height:75%;
 	width:100%;
-
 }
-
-span.sheadtext {
+span.sheadtext 
+{
 	font-size:40px;
 	letter-spacing:15px;
 	font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-div.Service {
+div.Service 
+{
 	float:left;
 	border:5px solid maroon;
-	border-radius:15%;
-	margin:2.5% 0 2.5% 3.5%;
-	
+	border-radius:5%;
+	margin:2.5% 0 2.5% 3.5%;	
 	height:85%;
 	width:20%;
 	text-align: center; 
@@ -429,6 +431,25 @@ span.stexthead {
 span.stext {
 	font-size:25px;
 	padding: 0 10% 0 10%;
-} */
+}
+#seeMoreButton
+{
+    background-color: maroon;
+    color: yellow;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5%;
+    margin-bottom: 80px;
+}
+#seeMoreButton:hover
+{
+    color: yellow;
+    border: 5px solid yellow;
+    font-weight: bold;
+}
 
 /* main */
