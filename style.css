@@ -394,6 +394,68 @@ p.text {
 
 
 /* Services */
+div.scontent {
+	height:800px;
+	width:100%;
+}
 
+div.shead {
+	height:25%;
+	width:100%;
+}
 
+div.shead img {
+	margin-top:-50px;
+	margin-bottom:-50px;
+}
+
+div.servielist {
+	height:75%;
+	width:100%;
+
+}
+
+span.sheadtext {
+	font-size:40px;
+	letter-spacing:15px;
+	font-weight:600;
+}
+
+div.Service {
+	float:left;
+	border:5px solid maroon;
+	border-radius:15%;
+	margin:2.5% 0 2.5% 3.5%;
+	
+	height:85%;
+	width:20%;
+	text-align: center; 
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+    justify-content: center; 
+	background-color:rgba(0, 0, 0, 0.1);
+}
+
+div.Service img{
+	margin-top:-150px;
+	margin-bottom:-50px;
+}
+
+#img3,#img4 {
+	margin-left:25px;
+}
+
+span.stexthead {
+	font-size:35px;
+	font-weight:600;
+	color:maroon;
+	border-bottom:2px solid maroon;
+}
+
+span.stext {
+	font-size:25px;
+	padding: 0 10% 0 10%;
+}
+	
 /* main */
