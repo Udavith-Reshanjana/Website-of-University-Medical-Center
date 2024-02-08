@@ -175,7 +175,7 @@ p.contactdata{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border:2px solid black;
+  border:2px solid maroon;
 
 }
 #fb
@@ -196,12 +196,12 @@ p.contactdata{
 }
 #twitter
 {
-  background: url("images/socialmedia.jpg") -290px -31px;
+  background: url("images/socialmedia.jpg") -292px -31px;
   margin-bottom:20px;
 }
 #linkedin
 {
-  background: url("images/socialmedia.jpg") -460px -31px;
+  background: url("images/socialmedia.jpg") -461px -31px;
   margin-bottom:20px;
 }
 #tiktok
@@ -239,7 +239,7 @@ table.contactinfo {
 #fb:hover, #insta:hover, #yt:hover, #twitter:hover, #linkedin:hover, #tiktok:hover
 {
 
-  border:2px solid gray;
+  border:2px solid black;
 
 }
 
