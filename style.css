@@ -458,4 +458,62 @@ span.stext {
 	padding: 0 10% 0 10%;
 }
 	
+/* doctors */
+
+div.dcontent {
+	height:800px;
+	width:100%;
+}
+
+div.dhead {
+	height:25%;
+	width:100%;
+}
+
+div.dhead img {
+	margin-top:-50px;
+	margin-bottom:-50px;
+}
+
+div.doctorlist {
+	height:75%;
+	width:100%;
+	padding-left:25%;
+	padding-right:25%;
+}
+
+span.dheadtext {
+	font-size:40px;
+	letter-spacing:15px;
+	font-weight:600;
+}
+
+div.doctors {
+	float:left;
+	border-radius:15%;
+	margin:2.5% 0 2.5% 3.5%;
+	height:85%;
+	width:20%;
+	text-align: center; 
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+}
+
+div.doctors img{
+	border:5px solid white;
+	outline:10px solid maroon;
+}
+
+span.dtexthead {
+	font-size:25px;
+	font-weight:600;
+}
+
+span.dtext {
+	font-size:25px;
+	padding: 0 10% 0 10%;
+}
+
+	
 /* main */
