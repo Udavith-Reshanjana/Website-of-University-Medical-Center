@@ -10,8 +10,10 @@ function isValidName(name) {
 function isValidPersonID(personID) {
     var regex = /^[A-Z]{2}\/\d{4}\/\d{4}$/;
     var regex1 = /^[A-Z]{2}\/\d{4}\/\d{3}$/;
+    var regex2 = /^[A-Z]{4}\/\d{4}\/\d{4}$/;
+    var regex3 = /^[A-Z]{4}\/\d{4}\/\d{3}$/;
 
-    return regex.test(personID) || regex1.test(personID);
+    return regex.test(personID) || regex1.test(personID) || regex2.test(personID) || regex3.test(personID);
 }
 function clearRadioButtons(groupName) {
     var radioButtons = document.getElementsByName(groupName);
