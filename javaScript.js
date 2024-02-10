@@ -3,6 +3,20 @@ function verifyBeforeLeave() {
     var confirmValue = confirm("Do you want to leave this page ?");
     return confirmValue;
 }
+function isValidName(name) {
+    var regex = /^[a-zA-Z\s]+$/;
+    return regex.test(name);
+}
+function isValidPersonID(personID) {
+    var regex = /^[A-Z]\/\d{4}\/\d{4}$/;
+    return regex.test(personID);
+}
+function clearRadioButtons(groupName) {
+    var radioButtons = document.getElementsByName(groupName);
+    for (var i = 0; i < radioButtons.length; i++) {
+        radioButtons[i].checked = false;
+    }
+}
 
 // login
 function isEmpty() {
@@ -45,4 +59,25 @@ function clearMeInLogIn() {
 // service
 function loadDoc() {
     window.location.href = "Doctor.html";
+}
+
+// feedback
+function clearMeInFeedback() {
+    var nameField = document.getElementById("Name");
+    var personIDField = document.getElementById("personid");
+    var dateField = document.getElementById("date");
+    var dobField = document.getElementById("date");
+
+    nameField.value = "";
+    personIDField.value = "";
+    dateField.value = "";
+    dobField.value = "";
+
+    clearRadioButtons("gender");
+    clearRadioButtons("DoctorKnowledge");
+    clearRadioButtons("DoctorKindness");
+    clearRadioButtons("WaitingTime");
+    clearRadioButtons("Hygene");
+
+    nameField.focus();
 }
