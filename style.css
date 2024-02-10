@@ -236,7 +236,7 @@ table.contactinfo
 }
 #fb:hover, #insta:hover, #yt:hover, #twitter:hover, #linkedin:hover, #tiktok:hover
 {
-  border:4px solid white;
+  border:2px solid black;
 }
 
 /* login */
@@ -452,64 +452,38 @@ span.stext {
     font-weight: bold;
 }
 
-/* doctors */
-div.dcontent 
+/* feedback */
+.feedbackCont
 {
-	height:800px;
-	width: 100%;
-}
-
-div.dhead 
-{
-	height:25%;
-	width:100%;
-}
-
-div.dhead img 
-{
-	margin-top:-50px;
-	margin-bottom:-50px;
-}
-div.doctorlist 
-{
-    height: 75%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
 }
-span.dheadtext 
+
+span.fheadtext 
 {
-	font-size:40px;
-	letter-spacing:15px;
-	font-weight:600;
+    font-size:40px;
+    letter-spacing:15px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
 }
-div.doctors 
+
+#leftImg, #rightImg
 {
-	float:left;
-	border-radius:15%;
-	margin:2.5% 6% 2.5% 6%;
-	height:85%;
-	width:20%;
-	text-align: center; 
-	display: flex; 
-	align-items: center;
-	flex-direction: column;
+    width: 50%;
+    height: 50%;
+    padding-left:20%;
 }
-div.doctors img
-{
-	border:5px solid white;
-	outline:10px solid maroon;
+
+
+div.notSatis {
+   display: inline;
+   padding-left: 100%;
 }
-span.dtexthead 
-{
-	font-size:26px;
-	font-weight:600;
+
+span.1 {
+   padding-left: 20px;
 }
-span.dtext 
-{
-	font-size:20px;
-	padding: 0 10% 0 10%;
-}
-	
+
+
 /* main */
