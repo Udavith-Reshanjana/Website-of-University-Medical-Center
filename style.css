@@ -452,118 +452,6 @@ span.stext {
     font-weight: bold;
 }
 
-/* appointment */
-.appointmentmain
-{
-    width: 100%;
-	border:2px solid black;
-}
-
-.appointment
-{
-    width: 60%;
-	
-}
-
-.Pfheadtext
-{
-    text-align: center;
-    margin-top: 5%;
-}
-
-.appoinmentcontainer 
-{
-    width: 100%;
-	border:2px solid red;
-}
-
-.appoinmentcontainer table
-{
-    width: 100%;
-    margin-top: 5%;
-}
-.appoinmentcontainer table th
-{
-	
-    text-align: left;
-	padding-left:10%;
-    width: 25%;
-}
-
-#symptoms {
-	vertical-align: top;
-}
-.appoinmentcontainer table td
-{
-    width: 65%;
-}
-.appoinmentcontainer table td input 
-{
-    width: 90%;
-    height: 25px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid gray;
-}
-
-textarea {
-	width:90%;
-}
-.appoinmentcontainer table td, .appoinmentcontainer table th
-{
-    padding-bottom: 20px;
-}
-
-.feedbackContContainer2 table
-{
-    width: 100%;
-    border: 1px solid gray;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-collapse: separate; 
-    border-spacing: 15px; 
-}
-
-table.gender {
-	width: 20%; 
-	margin-top: 10px;
-}
-.buttons
-{
-    padding: 10;
-    text-align: center;
-    margin-right: 10%;
-    margin-top: 10px;
-}
-#clearButton, #bookButton
-{
-    font-size: medium;
-    margin-right: 20px;
-    cursor: pointer;
-    border: 2px solid maroon;
-    border-radius: 10%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: bold;
-}
-#clearButton
-{
-    color: maroon;
-}
-#bookButton
-{
-    color: white;
-    background-color: maroon;
-}
-
-div.gender {
-	padding-left:20px;
-	padding-right:100px;
-    }
-
-
-
-
 
 /* doctors */
 
@@ -621,5 +509,128 @@ span.dtext {
 	font-size:20px;
 	padding: 0 10% 0 10%;
 }
+
+/* appointment */
+.appointmentmain
+{
+    width: 100%;
+	height:700px;
+}
+
+.appointment
+{
+    width: 62%;
+	float:left;
+	height:100%;
+}
+
+.appointmentimg {
+	height:100%;
+	width:38%;
+	float:left;
+}
+
+.Pfheadtext
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.appoinmentcontainer 
+{
+    width: 100%;
+	margin:2.5% 0;
+
+}
+
+.appoinmentcontainer table
+{
+    width: 100%;
+    margin-top: 5%;
+}
+.appoinmentcontainer table th
+{
+	
+    text-align: left;
+	padding-left:10%;
+    width: 25%;
+}
+
+#symptoms {
+	vertical-align: top;
+}
+.appoinmentcontainer table td
+{
+    width: 65%;
+}
+.appoinmentcontainer table td input 
+{
+    width: 90%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+
+.appoinmentcontainer textarea
+{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+
+
+.appoinmentcontainer table td, .appoinmentcontainer table th
+{
+    padding-bottom: 20px;
+}
+
+.feedbackContContainer2 table
+{
+    width: 100%;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-collapse: separate; 
+    border-spacing: 15px; 
+}
+
+table.gender {
+	width: 20%; 
+	margin-top: 10px;
+}
+.buttons
+{
+ 
+    text-align: center;
+    margin-right: -25%;
+    margin-top: 10px;
+}
+#clearButton, #bookButton
+{
+    font-size: medium;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid maroon;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#clearButton
+{
+    color: maroon;
+}
+#bookButton
+{
+    color: white;
+    background-color: maroon;
+}
+
+div.gender {
+	padding-left:20px;
+	padding-right:100px;
+    }
+
 
 /* main */
