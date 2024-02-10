@@ -33,144 +33,146 @@
                         </td>
 					</tr>
                 </table>
-			</p>
-            
+			</p>    
         </header> 
+
         <div class="feedbackmain">
+			<p class="Pfheadtext"><span class="fheadtext">FEEDBACK FORM</span></p>
         	<form action="" name="feedbackForm">
-	        	<table class="feedbackCont1">
-	        		<tr>
-	        			<td colspan="4" align="center"><span class="fheadtext">OUR SERVICES</span></td>
-	        		</tr>
-	        		<tr>
-	        			<td rowspan="5">
-	        				<img src="images\Feedback\7.png" alt="Feedback Image" id="leftImg">
-	        			</td>
-	        			<td>NAME</td>
-	        			<td><input type="text" name="Name" id="Name"></td>
-	        			<td rowspan="5">
-	        				<img src="images\Feedback\7.png" alt="Feedback Image" id="rightImg">
-	        			</td>
-	        		</tr>
-	        		<tr>
-	        			<td>PERSON ID</td>
-	        			<td><input type="text" name="personid" id="personid"></td>
-	        		</tr>
+				<div class="formImg"><img src="images\Feedback\7.png" alt="Feedback Image" id="leftImg"></div>
+	        	<div class="feedbackContContainer">
+					<table class="feedbackCont1">
+						<tr>
+							<th id="feedbackTopic">NAME</th>
+							<td><input type="text" name="Name" id="Name"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">PERSON ID</th>
+							<td><input type="text" name="personid" id="personid"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">DATE</th>
+							<td><input type="date" name="date" id="date"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">DATE OF BIRTH</th>
+							<td><input type="date" name="dob" id="dob"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">GENDER</th>
+							<td>
+								<table style="width: 20%; margin-top: 10px;">
+									<tr>
+										<td>MALE</td>
+										<td><input type="radio" name="gender" id="gender" value="Male"></td>
+									</tr>
+									<tr>
+										<td>FEMALE</td>
+										<td><input type="radio" name="gender" id="gender" value="Female"></td>
+									</tr>
+								</table>	
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="formImg"><img src="images\Feedback\7.png" alt="Feedback Image" id="rightImg"></div>
+				<div class="feedbackContContainer2">
+					<table class="feedbackCont2">
+						<tr>
+							<td>&nbsp;</td>
+							<td colspan="5">
+								<span id="notSatis">Not Satisfied</span>
+								<span id="verySatis">VerySatisfied</span>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><span id="rating">1</span></td>
+							<td><span id="rating">2</span></td>
+							<td><span id="rating">3</span></td>
+							<td><span id="rating">4</span></td>
+							<td><span id="rating">5</span></td>
+						</tr>
+						<tr>
+							<td class="feedbackT">Doctor Knowledge</td>
+							<td>
+								<input type="radio" name="Doctor Knowledge" id="dknow" value="1">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Knowledge" id="dknow" value="2">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Knowledge" id="dknow" value="3">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Knowledge" id="dknow" value="4">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Knowledge" id="dknow" value="5">
+							</td>
+						</tr>
 
-	        		<tr>
-	        			<td>DATE</td>
-	        			<td><input type="date" name="date" id="date"></td>
-	        		</tr>
+						<tr>
+							<td class="feedbackT">Doctor Kindness</td>
+							<td>
+								<input type="radio" name="Doctor Kindness" id="dkind" value="1">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Kindness" id="dkind" value="2">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Kindness" id="dkind" value="3">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Kindness" id="dkind" value="4">
+							</td>
+							<td>
+								<input type="radio" name="Doctor Kindness" id="dkind" value="5">
+							</td>
+						</tr>
 
-	        		<tr>
-	        			<td>DATE OF BIRTH</td>
-	        			<td><input type="date" name="dob" id="dob"></td>
-	        		</tr>
-
-	        		<tr>
-	        			<td>GENDER</td>
-	        			<td>
-	        				<input type="radio" name="gender" id="gender" value="Male">MALE
-	        				<input type="radio" name="gender" id="gender" value="Female">FEMALE
-	        			</td>
-	        		</tr>
-	        	</table>
-	        	<table class="feedbackCont2" align="center">
-	        		<tr>
-	        			<td>&nbsp;</td>
-	        			<td colspan="5">
-	        				<span id="notSatis">Not Satisfied</span>
-	        				<span id="verySatis">VerySatisfied</span>
-	        			</td>
-	        		</tr>
-	        		<tr>
-	        			<td>&nbsp;</td>
-	        			<td colspan="5">
-	        				<span id="1">1</span>
-	        				<span id="2">2</span>
-	        				<span id="3">3</span>
-	        				<span id="4">4</span>
-	        				<span id="5">5</span>
-	        			</td>
-	        		</tr>
-	        		<tr>
-	        			<td>Doctor Knowledge</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Knowledge" id="dknow" value="1">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Knowledge" id="dknow" value="2">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Knowledge" id="dknow" value="3">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Knowledge" id="dknow" value="4">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Knowledge" id="dknow" value="5">
-	        			</td>
-	        		</tr>
-
-	        		<tr>
-	        			<td>Doctor Kindness</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Kindness" id="dkind" value="1">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Kindness" id="dkind" value="2">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Kindness" id="dkind" value="3">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Kindness" id="dkind" value="4">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Doctor Kindness" id="dkind" value="5">
-	        			</td>
-	        		</tr>
-
-	        		<tr>
-	        			<td>Waiting Time</td>
-	        			<td>
-	        				<input type="radio" name="Waiting Time" id="wtime" value="1">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Waiting Time" id="wtime" value="2">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Waiting Time" id="wtime" value="3">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Waiting Time" id="wtime" value="4">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Waiting Time" id="wtime" value="5">
-	        			</td>
-	        		</tr>
-
-	        		<tr>
-	        			<td>Hygene</td>
-	        			<td>
-	        				<input type="radio" name="Hygene" id="hygenee" value="1">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Hygene" id="hygenee" value="2">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Hygene" id="hygenee" value="3">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Hygene" id="hygenee" value="4">
-	        			</td>
-	        			<td>
-	        				<input type="radio" name="Hygene" id="hygenee" value="5">
-	        			</td>
-	        		</tr>
-
-
-	        	</table>
+						<tr>
+							<td class="feedbackT">Waiting Time</td>
+							<td>
+								<input type="radio" name="Waiting Time" id="wtime" value="1">
+							</td>
+							<td>
+								<input type="radio" name="Waiting Time" id="wtime" value="2">
+							</td>
+							<td>
+								<input type="radio" name="Waiting Time" id="wtime" value="3">
+							</td>
+							<td>
+								<input type="radio" name="Waiting Time" id="wtime" value="4">
+							</td>
+							<td>
+								<input type="radio" name="Waiting Time" id="wtime" value="5">
+							</td>
+						</tr>
+						<tr>
+							<td class="feedbackT">Hygene</td>
+							<td>
+								<input type="radio" name="Hygene" id="hygenee" value="1">
+							</td>
+							<td>
+								<input type="radio" name="Hygene" id="hygenee" value="2">
+							</td>
+							<td>
+								<input type="radio" name="Hygene" id="hygenee" value="3">
+							</td>
+							<td>
+								<input type="radio" name="Hygene" id="hygenee" value="4">
+							</td>
+							<td>
+								<input type="radio" name="Hygene" id="hygenee" value="5">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="buttons">
+					<button type="button" id="clearButton">CLEAR</button>
+					<button type="submit" id="submitButton">SUBMIT</button>
+				</div>
         	</form>
         </div> 
         

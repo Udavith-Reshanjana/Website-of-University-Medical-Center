@@ -236,7 +236,14 @@ table.contactinfo
 }
 #fb:hover, #insta:hover, #yt:hover, #twitter:hover, #linkedin:hover, #tiktok:hover
 {
-  border:2px solid black;
+  border:4px solid white;
+}
+span.sheadtext, .fheadtext
+{
+	font-size:40px;
+	letter-spacing:15px;
+	font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* login */
@@ -389,13 +396,6 @@ div.servielist
 	height:75%;
 	width:100%;
 }
-span.sheadtext 
-{
-	font-size:40px;
-	letter-spacing:15px;
-	font-weight:600;
-    font-family: Arial, Helvetica, sans-serif;
-}
 div.Service 
 {
 	float:left;
@@ -453,33 +453,161 @@ span.stext {
 }
 
 /* feedback */
-.feedbackCont
+.feedbackmain
 {
     width: 100%;
-    height: auto;
 }
-
-span.fheadtext 
+.Pfheadtext
 {
-    font-size:40px;
-    letter-spacing:15px;
-    font-weight:600;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
+    text-align: center;
+    margin-top: 5%;
+}
+.formImg 
+{
+    width: 25%;
+    float: left;
+}
+.feedbackContContainer 
+{
+    width: 50%;
+    float: left;
 }
 
 #leftImg, #rightImg
 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.feedbackContContainer table
+{
+    width: 100%;
+    margin-top: 5%;
+}
+.feedbackContContainer table th
+{
+    text-align: left;
+    width: 35%;
+}
+.feedbackContContainer table td
+{
+    width: 65%;
+}
+.feedbackContContainer table td input
+{
+    width: 90%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+.feedbackContContainer table td, .feedbackContContainer table th
+{
+    padding-bottom: 20px;
+}
+.feedbackContContainer2 
+{
+    width: 60%;
+    margin: 20px auto 0;
+    padding: 10px;
+}
+.feedbackContContainer2 table
+{
+    width: 100%;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-collapse: separate; 
+    border-spacing: 15px; 
+}
+#verySatis
+{
+    float: right;
+    padding-right: 10%;
+}
+#notSatis, #verySatis, .feedbackContContainer2 table td
+{
+    padding-bottom: 15px;
+}
+#rating
+{
+    padding-left: 8%;
+}
+.feedbackContContainer2 table td.feedbackT
+{
+    text-align: left;
+    padding-left: 15%;
+}
+.buttons
+{
+    padding: 10;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#clearButton, #submitButton
+{
+    font-size: medium;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid maroon;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#clearButton
+{
+    color: maroon;
+}
+#submitButton
+{
+    color: white;
+    background-color: maroon;
+}
+
+/* .formImg, .form1
+{
+    display: inline;
+} */
+
+/* .feedbackCont
+{
+    width: 100%;
+    height: auto;
+}
+#feedbackTopic
+{
+    font-weight: 600;
+}
+.fheadtext 
+{
+    text-align: center;
+}
+.Pfheadtext
+{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+#leftImg, #rightImg
+{
     width: 50%;
     height: 50%;
-    padding-left:20%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+.feedbackCont1 input[type="text"], .feedbackCont1 input[type="date"], .feedbackCont1 input[type="radio"]
+{
+    width: 300px;
+    margin: 50;
 }
 
 
 div.notSatis {
    display: inline;
    padding-left: 100%;
-}
+} */
 
 /* span.1 {
    padding-left: 20px;
