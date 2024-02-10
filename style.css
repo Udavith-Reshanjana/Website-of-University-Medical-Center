@@ -47,7 +47,7 @@ header p
 }
 #headtxt1, #headtxt2
 {
-    margin-left: -85px;
+    margin-left: -55px;
     justify-content: left;
     text-align: center;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ header p
 .subHeader ul li
 {
 	display: inline-block;
-	padding-left: 5%;
+	padding-left: 2%;
 	margin-left: 2%;
 }
 .subHeader a
@@ -113,29 +113,28 @@ header p
     color: white;
 	width: 100%;
 	text-align: center;
-	width: 100%;
 }
-
-
 #contactIco 
 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid white;
     margin: 10 auto;
-
+    margin-right: 15px;
 }
-
 p.contactdata{
 	text-align:left;
 	padding:0;
 }
-	
+.footerTable
+{
+    width: 100%;
+}
 .footerTable th
 {
-    font-size:large;
-	color:white;
+    font-size: large;
+    color:white;
 	padding: 15px 0 15px 0;
 	letter-spacing:5px;
 }
@@ -165,10 +164,17 @@ p.contactdata{
 	padding: 15;
 	margin-left: 10;
 }
-
+.questions
+{
+   margin-left: 15%;
+}
+.questions li
+{
+   margin-bottom: 40px;
+}
 .information
 {
-
+    margin-left: 9%;
 }
 #fb, #insta, #yt, #twitter, #linkedin, #tiktok
 {
@@ -176,87 +182,71 @@ p.contactdata{
   height: 50px;
   border-radius: 50%;
   border:2px solid maroon;
-
+  margin-bottom:20px;
 }
 #fb
 {
   background: url("images/socialmedia.jpg") -40px -30px;
-  margin-bottom:20px;
   margin-top:20px;
 }
 #insta
 {
-  background: url("images/socialmedia.jpg") -209px -31px;
-  margin-bottom:20px;
+  background: url("images/socialmedia.jpg") -209px -30px;
 }
 #yt
 {
-  background: url("images/socialmedia.jpg") -546px -31px;
-  margin-bottom:20px;
+  background: url("images/socialmedia.jpg") -546px -30px;
 }
 #twitter
 {
-  background: url("images/socialmedia.jpg") -292px -31px;
-  margin-bottom:20px;
+  background: url("images/socialmedia.jpg") -290px -30px;
 }
 #linkedin
 {
-  background: url("images/socialmedia.jpg") -461px -31px;
-  margin-bottom:20px;
+  background: url("images/socialmedia.jpg") -460px -30px;
 }
 #tiktok
 {
-  background: url("images/socialmedia.jpg") -546px -203px;
-  margin-bottom:20px;
+  background: url("images/socialmedia.jpg") -546px -200px;
 }
-
-.footlinks {
+.footlinks 
+{
 	line-height:500%;
 }
-
-.footlinks a:link,
-.footlinks a:visited {
+.footlinks a:link, .footlinks a:visited 
+{
 	font-size:18px;
 	color:white;
 	text-decoration:none;
 	padding: 5px 25px 5px 25px;
 }
-
-.footlinks a:hover {
+.footlinks a:hover 
+{
 	color:black;
 	font-size:18px;
 	text-decoration:underline;
 	background-color:white;
+    font-weight: bold;
 }
-	
-table.contactinfo {
-		width:50%;
-		height:100%;
-		margin: 0 auto;
+table.contactinfo 
+{
+    width:70%;
+    height:100%;
+    margin: 0 auto;
 }
-
-
 #fb:hover, #insta:hover, #yt:hover, #twitter:hover, #linkedin:hover, #tiktok:hover
 {
-
-  border:2px solid black;
-
+  border:4px solid white;
 }
-
-
-
+span.sheadtext, .fheadtext
+{
+	font-size:40px;
+	letter-spacing:15px;
+	font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* login */
-
-body.login {
-	background:url("images/login/bg2.jpeg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:0 100%;
-	background-size:100% 170%;
-
-}
-
 .loginHeader
 {
    margin: 0; 
@@ -300,16 +290,11 @@ body.login {
     letter-spacing: 20px;
     font-size: 50px;
     margin-bottom: 2%;
-	background-color:white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-table.content {
-	font-size:20px;
-}
-
 .logincont
 {
-	font-size:25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,23 +305,20 @@ table.content {
     padding: 10%;
 	background-color: rgba(0, 0, 0, 0.2);
     width: 30%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 5%;
     margin-top: 2%;
     margin-bottom: 6%;
 }
 .logincont input
 {
-	font-size:25px;
     width: 90%;
-    height: 35px;
+    height: 20px;
 }
-
 .logincont button
 {
-	font-size:25px;
     width: 40%;
-    height: 45px;
+    height: 35px;
     float: center;
     margin-top: 4%;
     background-color: #5271FF;
@@ -347,28 +329,24 @@ table.content {
     margin-left: 10px;
 }
 
-.logincont button:hover
+/* home */
+div.homecoontent 
 {
-	border: 2px solid maroon;
-}
-
-
-/* Home */
-
-div.homecoontent {
 	width:100%;
-	height:700px; 
+	height: 700px; 
 	margin-bottom:-16px;
+    display: block;
+    margin-left: -5%;
 }
-
-div.homeimg {
+div.homeimg 
+{
 	height:100%;
 	width:50%;
 	float:left; 
-	align:center
+	margin: 0 auto;
 }
-
-div.hometext {
+div.hometext 
+{
 	height: 100%; 
 	padding:0 5% 0 5%;
 	width: 40%; 
@@ -377,56 +355,53 @@ div.hometext {
 	display: flex; 
 	align-items: center;
 	flex-direction: column;
-    justify-content: center; 
-}
-	
-p.homehead {
+    justify-content: center;
+}	
+p.homehead 
+{
 	font-size:40px;
 	letter-spacing:10px;
 	font-weight:600;
 	display:block;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-p.text {
+p.text 
+{
     text-align: center; 
-	font-size:30px;
+	font-size:20px;
+    line-height: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /* Services */
-div.scontent {
+div.scontent 
+{
 	height:800px;
 	width:100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
-
-div.shead {
-	height:25%;
+div.shead 
+{
+	height:30%;
 	width:100%;
 }
-
-div.shead img {
+div.shead img 
+{
 	margin-top:-50px;
 	margin-bottom:-50px;
 }
-
-div.servielist {
+div.servielist 
+{
 	height:75%;
 	width:100%;
-
 }
-
-span.sheadtext {
-	font-size:40px;
-	letter-spacing:15px;
-	font-weight:600;
-}
-
-div.Service {
+div.Service 
+{
 	float:left;
 	border:5px solid maroon;
-	border-radius:15%;
-	margin:2.5% 0 2.5% 3.5%;
-	
+	border-radius:5%;
+	margin:2.5% 0 2.5% 3.5%;	
 	height:85%;
 	width:20%;
 	text-align: center; 
@@ -457,7 +432,139 @@ span.stext {
 	font-size:25px;
 	padding: 0 10% 0 10%;
 }
+#seeMoreButton
+{
+    background-color: maroon;
+    color: yellow;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5%;
+    margin-bottom: 80px;
+}
+#seeMoreButton:hover
+{
+    color: yellow;
+    border: 5px solid yellow;
+    font-weight: bold;
+}
+
+/* appointment */
+.appointmentmain
+{
+    width: 100%;
+	border:2px solid black;
+}
+
+.appointment
+{
+    width: 60%;
 	
+}
+
+.Pfheadtext
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.appoinmentcontainer 
+{
+    width: 100%;
+	border:2px solid red;
+}
+
+.appoinmentcontainer table
+{
+    width: 100%;
+    margin-top: 5%;
+}
+.appoinmentcontainer table th
+{
+	
+    text-align: left;
+	padding-left:10%;
+    width: 25%;
+}
+
+#symptoms {
+	vertical-align: top;
+}
+.appoinmentcontainer table td
+{
+    width: 65%;
+}
+.appoinmentcontainer table td input 
+{
+    width: 90%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+
+textarea {
+	width:90%;
+}
+.appoinmentcontainer table td, .appoinmentcontainer table th
+{
+    padding-bottom: 20px;
+}
+
+.feedbackContContainer2 table
+{
+    width: 100%;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-collapse: separate; 
+    border-spacing: 15px; 
+}
+
+table.gender {
+	width: 20%; 
+	margin-top: 10px;
+}
+.buttons
+{
+    padding: 10;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#clearButton, #bookButton
+{
+    font-size: medium;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid maroon;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#clearButton
+{
+    color: maroon;
+}
+#bookButton
+{
+    color: white;
+    background-color: maroon;
+}
+
+div.gender {
+	padding-left:20px;
+	padding-right:100px;
+    }
+
+
+
+
+
 /* doctors */
 
 div.dcontent {
@@ -476,12 +583,12 @@ div.dhead img {
 }
 
 div.doctorlist {
-	height:75%;
-	width:100%;
-	padding-left:25%;
-	padding-right:25%;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
-
 span.dheadtext {
 	font-size:40px;
 	letter-spacing:15px;
@@ -491,7 +598,7 @@ span.dheadtext {
 div.doctors {
 	float:left;
 	border-radius:15%;
-	margin:2.5% 0 2.5% 3.5%;
+	margin:2.5% 5% 2.5% 5%;
 	height:85%;
 	width:20%;
 	text-align: center; 
@@ -515,5 +622,4 @@ span.dtext {
 	padding: 0 10% 0 10%;
 }
 
-	
 /* main */
