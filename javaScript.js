@@ -8,8 +8,10 @@ function isValidName(name) {
     return regex.test(name);
 }
 function isValidPersonID(personID) {
-    var regex = /^[A-Z]\/\d{4}\/\d{4}$/;
-    return regex.test(personID);
+    var regex = /^[A-Z]{2}\/\d{4}\/\d{4}$/;
+    var regex1 = /^[A-Z]{2}\/\d{4}\/\d{3}$/;
+
+    return regex.test(personID) || regex1.test(personID);
 }
 function clearRadioButtons(groupName) {
     var radioButtons = document.getElementsByName(groupName);
@@ -43,7 +45,9 @@ function isEmpty() {
         passwordField.focus();
         return false;
     }
-    return true;
+    else {
+        return true;
+    }
 }
 function clearMeInLogIn() {
     var usernameField = document.getElementById("username");
@@ -80,4 +84,52 @@ function clearMeInFeedback() {
     clearRadioButtons("Hygene");
 
     nameField.focus();
+}
+
+function validateSubmitInFeedback() {
+    var nameField = document.getElementById("Name");
+    var personIDField = document.getElementById("personid");
+    var dateField = document.getElementById("date");
+    var dobField = document.getElementById("date");
+    var genderField = document.getElementsByName("gender");
+
+    if (nameField.value === "") {
+        alert("Please enter your name !!!");
+        nameField.style.backgroundColor = "#ff9999";
+        nameField.focus();
+        return false;
+    } 
+    else if (!isValidName(nameField.value)) {
+        alert("Please enter a valid name !!!");
+        nameField.style.backgroundColor = "#ff9999";
+        nameField.focus();
+        return false;
+    }
+    else if (personIDField.value === "") {
+        alert("Please enter your person ID !!!");
+        personIDField.style.backgroundColor = "#ff9999";
+        personIDField.focus();
+        return false;
+    } 
+    else if (!isValidPersonID(personIDField.value)) {
+        alert("Please enter a valid person ID like PS/2020/XXX !!!");
+        personIDField.style.backgroundColor = "#ff9999";
+        personIDField.focus();
+        return false;
+    }
+    else if (dateField.value === "") {
+        alert("Please fill the date field!!!");
+        dateField.style.backgroundColor = "#ff9999";
+        dateField.focus();
+        return false;
+    } 
+    else if (dobField.value === "") {
+        alert("Please fill the date of birth field !!!");
+        dobField.style.backgroundColor = "#ff9999";
+        dobField.focus();
+        return false;
+    } 
+    else {
+        return true;
+    }
 }
