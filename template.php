@@ -10,32 +10,9 @@
     <script src="javaScript.js"></script>
 </head>
     <body>
-        <header>
-            <p class="header">
-				<table class="headerTable">
-					<tr>
-						<td><center><img src="images\logo.png" alt="UOK logo" id="headerLogo"></center></td>
-						<td>
-                            <span id="headtxt1">Medical Center</span><br>
-                            <span id="headtxt2">University Of Kelaniya</span>
-                        </td>
-						<td>
-							<div class="subHeader">
-								<ul>
-									<li><a href="">HOME</a></li>
-									<li><a href="">SERVICE</a></li>
-									<li><a href="">DOCTOR</a></li>
-									<li><a href="">APPOINMENT</a></li>
-									<li><a href="">FEEDBACK</a></li>
-									<li><a href="login.html">SIGN OUT</a></li>
-								</ul>
-							</div>
-                        </td>
-					</tr>
-                </table>
-			</p>
-            
-        </header>  
+         <?php
+		 	include("php/Header.php");
+		 ?>
         
         <footer>
 			<p class="footer">

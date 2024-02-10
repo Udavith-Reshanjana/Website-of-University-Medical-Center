@@ -64,7 +64,7 @@ function clearMeInLogIn() {
 
 // service
 function loadDoc() {
-    window.location.href = "Doctor.html";
+    window.location.href = "Doctor.php";
 }
 
 // feedback
