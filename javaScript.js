@@ -43,6 +43,6 @@ function clearMeInLogIn() {
 }
 
 // service
-// function name() {
-    
-// }
+function loadDoc() {
+    window.location.href = "Doctor.html";
+}
