@@ -16,7 +16,7 @@
 
         <div class="feedbackmain">
 			<p class="Pfheadtext"><span class="fheadtext">FEEDBACK FORM</span></p>
-        	<form action="/submit.php" name="feedbackForm" onsubmit="return validateSubmitInFeedback()">
+        	<form action="recordFeedback.php" name="feedbackForm" onsubmit="return validateSubmitInFeedback()" method="post">
 				<div class="formImg"><img src="images\Feedback\7.png" alt="Feedback Image" id="leftImg"></div>
 	        	<div class="feedbackContContainer">
 					<table class="feedbackCont1">
@@ -48,12 +48,12 @@
 										<td>FEMALE</td>
 										<td><input type="radio" name="gender" id="female" value="Female" required></td>
 									</tr>
-									<tr>
-										<th id="feedbackTopic">SUGGESTIONS</th>
-										<td><textarea name="Suggesstions" id="Suggesstions" rows="10" cols="50" style="background-color: rgba(0, 0, 0, 0.1);"></textarea></td>
-									</tr>
 								</table>	
 							</td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">SUGGESTIONS</th>
+							<td><textarea name="Suggesstions" id="Suggesstions" rows="10" cols="50" style="background-color: rgba(0, 0, 0, 0.1);"></textarea></td>
 						</tr>
 					</table>
 				</div>
