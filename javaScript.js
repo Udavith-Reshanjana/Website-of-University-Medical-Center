@@ -174,6 +174,7 @@ function validateSubmitInFeedback() {
 function clearMeInAppoinment() {
     var nameField = document.getElementById("Name");
     var personIDField = document.getElementById("personid");
+    var emailField = document.getElementById("universityMail");
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
@@ -181,6 +182,7 @@ function clearMeInAppoinment() {
 
     nameField.value = "";
     personIDField.value = "";
+    emailField.value = "";
     dateField.value = "";
     dobField.value = "";
     contactnoField.value = "";
