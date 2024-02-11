@@ -52,6 +52,20 @@ function isValidContactNo(contactno) {
         return false;
     }
 }
+function isValidEmail(email) {
+    // Regular expression pattern to match emails ending with @stu.kln.ac.lk
+    var pattern1 = /^[^\s@]+@stu\.kln\.ac\.lk$/;
+    // Regular expression pattern to match emails ending with @kln.ac.lk
+    var pattern2 = /^[^\s@]+@kln\.ac\.lk$/;
+
+    // Check if the email matches either pattern
+    if (pattern1.test(email) || pattern2.test(email)) {
+        return true; // Email is valid
+    } else {
+        return false; // Email is invalid
+    }
+}
+
 
 // login
 function isEmpty() {
@@ -195,6 +209,7 @@ function clearMeInAppoinment() {
 function validateSubmitInAppointment() {
     var nameField = document.getElementById("Name");
     var personIDField = document.getElementById("personid");
+    var emailField = document.getElementById("universityMail");
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
@@ -216,6 +231,18 @@ function validateSubmitInAppointment() {
         alert("Please enter a valid person ID like PS/2020/XXX !!!");
         personIDField.style.backgroundColor = "#ff9999";
         personIDField.focus();
+        return false;
+    }
+    else if (emailField.value === "") {
+        alert("Please enter your email address !!!");
+        emailField.style.backgroundColor = "#ff9999";
+        emailField.focus();
+        return false;
+    } 
+    else if (!isValidEmail(emailField.value)) {
+        alert("Please enter a valid person ID with pattern abc@stu.kln.ac.lk or abc@kln.ac.lk !!!");
+        emailField.style.backgroundColor = "#ff9999";
+        emailField.focus();
         return false;
     }
     else if (dateField.value === "") {
