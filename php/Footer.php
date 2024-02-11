@@ -14,7 +14,7 @@ echo '<footer>
                         <a href="Home.php">Home</a><br>
                         <a href="Services.php">Services</a><br>
                         <a href="Doctor.php">Doctor</a><br>
-                        <a href="">Appoinment</a><br>
+                        <a href="Appoinment.php">Appoinment</a><br>
                         <a href="Feedback.php">Feedback</a><br></p>
                         
                         </td>
