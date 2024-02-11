@@ -17,7 +17,7 @@
         <div class="appointmentmain">
 			<p class="Pfheadtext"><span class="fheadtext">APPOINTMENT</span></p>
 			<div class="appointment">
-        	<form action="/appointment.php" name="appointmentform" onsubmit="return validateSubmitInAppointment()" method="post">
+        	<form action="makeAppoinment.php" name="appointmentform" onsubmit="return validateSubmitInAppointment()" method="post">
 	        	
 				<div class="appoinmentcontainer">
 					<table class="feedbackCont1" >
@@ -72,7 +72,7 @@
 					
 				</div>
 				<div class="buttons">
-					<button type="button" id="clearButton" onclick="">CLEAR</button>
+					<button type="button" id="clearButton" onclick="return clearMeInAppoinment()">CLEAR</button>
 					<button type="submit" id="bookButton">BOOK</button>
 				</div>
 

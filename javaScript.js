@@ -53,19 +53,37 @@ function isValidContactNo(contactno) {
     }
 }
 function isValidEmail(email) {
-    // Regular expression pattern to match emails ending with @stu.kln.ac.lk
     var pattern1 = /^[^\s@]+@stu\.kln\.ac\.lk$/;
-    // Regular expression pattern to match emails ending with @kln.ac.lk
     var pattern2 = /^[^\s@]+@kln\.ac\.lk$/;
 
-    // Check if the email matches either pattern
     if (pattern1.test(email) || pattern2.test(email)) {
-        return true; // Email is valid
+        return true;
     } else {
-        return false; // Email is invalid
+        return false;
     }
 }
-
+function isPersonIDExist(personID, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            if (xhr.status == 200) {
+                var response = xhr.responseText;
+                if (response === 'true') {
+                    // Person ID exists
+                    console.log("Person ID exists");
+                    callback(true);
+                } else {
+                    // Person ID does not exist
+                    callback(false);
+                }
+            } else {
+                console.error('Error occurred while checking person ID');
+            }
+        }
+    };
+    xhr.open('GET', 'validate.php?personID=' + personID, true);
+    xhr.send();
+}
 
 // login
 function isEmpty() {
@@ -141,7 +159,6 @@ function validateSubmitInFeedback() {
     var personIDField = document.getElementById("personid");
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
-    var genderField = document.getElementsByName("gender");
 
     if (nameField.value === "") {
         alert("Please enter your name !!!");
@@ -213,7 +230,6 @@ function validateSubmitInAppointment() {
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
-    var symptomsField = document.getElementById("symptom");
 
     if (nameField.value === "") {
         alert("Please enter your name !!!");
@@ -227,12 +243,6 @@ function validateSubmitInAppointment() {
         personIDField.focus();
         return false;
     } 
-    else if (!isValidPersonID(personIDField.value)) {
-        alert("Please enter a valid person ID like PS/2020/XXX !!!");
-        personIDField.style.backgroundColor = "#ff9999";
-        personIDField.focus();
-        return false;
-    }
     else if (emailField.value === "") {
         alert("Please enter your email address !!!");
         emailField.style.backgroundColor = "#ff9999";
@@ -243,6 +253,12 @@ function validateSubmitInAppointment() {
         alert("Please enter a valid person ID with pattern abc@stu.kln.ac.lk or abc@kln.ac.lk !!!");
         emailField.style.backgroundColor = "#ff9999";
         emailField.focus();
+        return false;
+    }
+    else if (!isValidPersonID(personIDField.value)) {
+        alert("Please enter a valid person ID like PS/2020/XXX !!!");
+        personIDField.style.backgroundColor = "#ff9999";
+        personIDField.focus();
         return false;
     }
     else if (dateField.value === "") {
