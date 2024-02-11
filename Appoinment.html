@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPOINTMENT</title>
+    <link rel="icon" href="images\logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+    <script src="javaScript.js"></script>
+</head>
+    <body>
+		<!-- <?php
+		 	include("php/Header.php");
+		 ?> -->
+
+		 <header>
+			<p class="header">
+				<table class="headerTable">
+					<tr>
+						<td><center><img src="images\logo.png" alt="UOK logo" id="headerLogo"></center></td>
+						<td>
+							<span id="headtxt1">Medical Center</span><br>
+							<span id="headtxt2">University Of Kelaniya</span>
+						</td>
+						<td>
+							<div class="subHeader">
+								<ul>
+									<li><a href="">HOME</a></li>
+									<li><a href="">SERVICE</a></li>
+									<li><a href="">DOCTOR</a></li>
+									<li><a href="">APPOINTMENT</a></li>
+									<li><a href="">FEEDBACK</a></li>
+									<li><a href="login.html">SIGN OUT</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</p>
+		</header>
+
+        <div class="appointmentmain">
+			<p class="Pfheadtext"><span class="fheadtext">APPOINTMENT</span></p>
+			<div class="appointment">
+        	<form action="/appointment.php" name="appointmentform" onsubmit="">
+	        	
+				<div class="appoinmentcontainer">
+					<table class="feedbackCont1" >
+						<tr>
+							<th id="feedbackTopic">NAME</th>
+							<td><input type="text" name="Name" id="Name"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">PERSON ID</th>
+							<td><input type="text" name="personid" id="personid"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">DATE</th>
+							<td><input type="date" name="date" id="date"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">DATE OF BIRTH</th>
+							<td><input type="date" name="dob" id="dob"></td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">GENDER</th>
+							<td>
+								<table style="width: 20%; margin-top: 10px;" >
+									<tr>
+										<td><input type="radio" name="gender" id="male" value="Male" required></td>
+										<td><div class="gender">MALE</div></td>
+										
+										<td><input type="radio" name="gender" id="female" value="Female" required></td>
+										<td><div class="gender">FEMALE</div></td>
+										
+									</tr>
+								</table>	
+							</td>
+						</tr>
+						<tr>
+							<th id="feedbackTopic">CONTACT NO</th>
+							<td><input type="text" name="contactno" id="contactno"></td>
+						</tr>
+						<tr>
+							<th id="symptoms">SYMPTOMS</th>
+							<td><textarea name="symptoms" id="symptoms" rows="10"></textarea></td>
+						</tr>
+					</table>
+					
+				</div>
+				<div class="buttons">
+					<button type="button" id="clearButton" onclick="">CLEAR</button>
+					<button type="submit" id="bookButton">BOOK</button>
+				</div>
+
+				
+        	</form>
+			</div> 
+			<div class="appointmentimg">
+				<img src="images\appointment\3.png" alt="appointmentimg" id="appointmentimg" width="100%" height="100%">
+			</div>
+		</div>
+        <!-- <?php
+		 	include("php/Footer.php");
+		 ?> -->
+
+		 <footer>
+			<p class="footer">
+				<table class="footerTable">
+					<tr>
+						<th>Information</th>
+						<th>Have A Question</th>
+						<th>Social Media</th>
+						<th>Visit Us</th>
+					</tr>
+					<tr>
+						<td>
+						<p class="footlinks">
+							<a href="">Home</a><br>
+							<a href="">Services</a><br>
+							<a href="">Doctor</a><br>
+							<a href="">Appoinment</a><br>
+							<a href="">Feedback</a><br></p>
+							
+							</td>
+							<td>
+								<div><table class="contactinfo">
+									<tr>
+										<td></td>
+										<td align="left">Location:</td>
+									</tr>
+									<tr class="contactrow">
+										<td><img src="https://th.bing.com/th/id/OIP.po9KHFVCIA3iRW0T4JG10gHaHa?rs=1&pid=ImgDetMain" alt="location" id="contactIco"><br><br></td>
+										<td><p class="contactdata">
+											Block G4, <br>
+											University of Kelaniya, <br>
+											Dalugama, Kelaniya.
+											<br><br>
+											</p>
+										</td>
+									</tr>
+									
+									
+									<tr>
+										<td></td>
+										<td align="left">Telephone:</td>
+									</tr>
+									<tr id="comtactrow">		
+										<td><img src="https://th.bing.com/th/id/OIP.1uOLmXhi68eTf_mU_CU8lgAAAA?w=474&h=474&rs=1&pid=ImgDetMain" alt="contact us" id="contactIco"><br><br></td>
+										<td><p class="contactdata">
+													  +94 11 291 7707<br>
+													  +94 11 290 3150<br>
+													  +94 11 290 3152<br>
+													  +94 11 290 3153<br><br>
+											</p>
+										</td>			
+									</tr>
+									<tr>
+										<td><img src="https://th.bing.com/th/id/OIP.LNQsVvbNYy6wM1dvPmTDTgAAAA?rs=1&pid=ImgDetMain" alt="email" id="contactIco"></td>
+										<td><p class="contactdata">E-mail:<br><br>
+											cmo@kln.ac.lk</td>
+											</p>
+									</tr>
+								</table></div>
+								
+										
+							</td>
+							<td align="center">
+									<a href="https://web.facebook.com/ukelaniya" target="_blank"><div id="fb" title="facebook"></div></a>
+									<a href="https://www.instagram.com/ukelaniya" target="_blank"><div id="insta" title="instagram"></div></a>
+									<a href="https://www.linkedin.com/company/ukelaniya" target="_blank"><div id="linkedin" title="linkedin"></div></a>
+									<a href="https://www.youtube.com/@ukelaniya" target="_blank"><div id="yt" title="youtube"></div></a>
+									<a href="https://www.twitter.com/ukelaniya" target="_blank"><div id="twitter" title="twitter"></div></a>
+									<a href="https://www.tiktok.com/@ukelaniya" target="_blank"><div id="tiktok" title="tiktok"></div></a>
+							</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.280695205161!2d79.91219667412166!3d6.976171593024574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259c2d9cf068d%3A0x7b40df1780f34f75!2sMedical%20center%20of%20university%20of%20kelaniya!5e0!3m2!1sen!2slk!4v1706995554100!5m2!1sen!2slk" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</td>
+					</tr>
+				</table>								
+			</p>
+			<p id="copyrightsTxt">&copy; 2024 <strong>University of Kelaniya</strong>, Designed By Group 03</p>
+		</footer>
+        
+    </body>
+</html>
