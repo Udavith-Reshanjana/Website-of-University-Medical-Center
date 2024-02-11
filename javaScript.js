@@ -3,10 +3,6 @@ function verifyBeforeLeave() {
     var confirmValue = confirm("Do you want to leave this page ?");
     return confirmValue;
 }
-function isValidName(name) {
-    var regex = /^[a-zA-Z\s]+$/;
-    return regex.test(name);
-}
 function isValidPersonID(personID) {
     var regex = /^[A-Z]{2}\/\d{4}\/\d{4}$/;
     var regex1 = /^[A-Z]{2}\/\d{4}\/\d{3}$/;
@@ -19,6 +15,41 @@ function clearRadioButtons(groupName) {
     var radioButtons = document.getElementsByName(groupName);
     for (var i = 0; i < radioButtons.length; i++) {
         radioButtons[i].checked = false;
+    }
+}
+function isValidContactNo(contactno) {
+    if (contactno.length === 9) {
+        var firstTwoDigits = contactno.substring(0, 2);
+        var validStartingCodes = ['11', '70', '71', '72', '75', '76', '77', '78'];
+        if (validStartingCodes.includes(firstTwoDigits)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (contactno.length === 10) {
+        var firstThreeDigits = contactno.substring(0, 3);
+        var validStartingCodes = ['011', '070', '071', '072', '075', '076', '077', '078'];
+        if (validStartingCodes.includes(firstThreeDigits)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (contactno.length === 10) {
+        var firstFiveDigits = contactno.substring(0, 5);
+        var validStartingCodes = ['+9411', '+9470', '+9471', '+9472', '+9475', '+9476', '+9477', '+9478'];
+        if (validStartingCodes.includes(firstFiveDigits)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        return false;
     }
 }
 
@@ -158,4 +189,58 @@ function clearMeInAppoinment() {
     clearRadioButtons("gender");
 
     nameField.focus();
+}
+function validateSubmitInAppointment() {
+    var nameField = document.getElementById("Name");
+    var personIDField = document.getElementById("personid");
+    var dateField = document.getElementById("date");
+    var dobField = document.getElementById("dob");
+    var contactnoField = document.getElementById("contactno");
+    var symptomsField = document.getElementById("symptom");
+
+    if (nameField.value === "") {
+        alert("Please enter your name !!!");
+        nameField.style.backgroundColor = "#ff9999";
+        nameField.focus();
+        return false;
+    } 
+    else if (personIDField.value === "") {
+        alert("Please enter your person ID !!!");
+        personIDField.style.backgroundColor = "#ff9999";
+        personIDField.focus();
+        return false;
+    } 
+    else if (!isValidPersonID(personIDField.value)) {
+        alert("Please enter a valid person ID like PS/2020/XXX !!!");
+        personIDField.style.backgroundColor = "#ff9999";
+        personIDField.focus();
+        return false;
+    }
+    else if (dateField.value === "") {
+        alert("Please fill the date field!!!");
+        dateField.style.backgroundColor = "#ff9999";
+        dateField.focus();
+        return false;
+    } 
+    else if (dobField.value === "") {
+        alert("Please fill the date of birth field !!!");
+        dobField.style.backgroundColor = "#ff9999";
+        dobField.focus();
+        return false;
+    } 
+    else if (contactnoField.value === "") {
+        alert("Please enter the contact number !!!");
+        contactnoField.style.backgroundColor = "#ff9999";
+        contactnoField.focus();
+        return false;
+    } 
+    else if (!isValidContactNo(contactnoField.value)) {
+        alert("Please enter a valid contact number which has the pattern 77XXXXXXX, 075XXXXXXX, or +9470XXXXXXX !!!");
+        contactnoField.style.backgroundColor = "#ff9999";
+        contactnoField.focus();
+        return false;
+    }
+    else {
+        return true;
+    }
 }

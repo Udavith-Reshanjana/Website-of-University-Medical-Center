@@ -17,7 +17,7 @@
         <div class="appointmentmain">
 			<p class="Pfheadtext"><span class="fheadtext">APPOINTMENT</span></p>
 			<div class="appointment">
-        	<form action="/appointment.php" name="appointmentform" onsubmit="">
+        	<form action="/appointment.php" name="appointmentform" onsubmit="return validateSubmitInAppointment()">
 	        	
 				<div class="appoinmentcontainer">
 					<table class="feedbackCont1" >
