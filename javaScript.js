@@ -66,6 +66,9 @@ function clearMeInLogIn() {
 function loadDoc() {
     window.location.href = "Doctor.php";
 }
+function loadAppoint() {
+    window.location.href = "Appoinment.php";
+}
 
 // feedback
 function clearMeInFeedback() {
