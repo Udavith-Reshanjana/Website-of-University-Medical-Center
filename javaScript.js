@@ -210,6 +210,7 @@ function clearMeInAppoinment() {
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
     var symptomsField = document.getElementById("symptom");
+    var feedbackTimeField = document.getElementById("time");
 
     nameField.value = "";
     personIDField.value = "";
@@ -218,6 +219,7 @@ function clearMeInAppoinment() {
     dobField.value = "";
     contactnoField.value = "";
     symptomsField.value = "";
+    feedbackTimeField.value = "";
 
     clearRadioButtons("gender");
 
@@ -230,6 +232,7 @@ function validateSubmitInAppointment() {
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
+    var feedbackTimeField = document.getElementById("time");
 
     if (nameField.value === "") {
         alert("Please enter your name !!!");
@@ -265,6 +268,12 @@ function validateSubmitInAppointment() {
         alert("Please fill the date field!!!");
         dateField.style.backgroundColor = "#ff9999";
         dateField.focus();
+        return false;
+    } 
+    else if (feedbackTimeField.value === "") {
+        alert("Please enter your appoinment time !!!");
+        feedbackTimeField.style.backgroundColor = "#ff9999";
+        feedbackTimeField.focus();
         return false;
     } 
     else if (dobField.value === "") {
