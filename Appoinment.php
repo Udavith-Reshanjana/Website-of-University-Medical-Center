@@ -30,6 +30,10 @@
 							<td><input type="text" name="personid" id="personid"></td>
 						</tr>
 						<tr>
+							<th id="feedbackTopic">Email</th>
+							<td><input type="email" name="universityMail" id="universityMail"></td>
+						</tr>
+						<tr>
 							<th id="feedbackTopic">DATE</th>
 							<td><input type="date" name="date" id="date"></td>
 						</tr>
