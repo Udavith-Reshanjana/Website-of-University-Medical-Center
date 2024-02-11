@@ -34,12 +34,16 @@
 							<td><input type="email" name="universityMail" id="universityMail"></td>
 						</tr>
 						<tr>
+							<th id="feedbackTopic">DATE OF BIRTH</th>
+							<td><input type="date" name="dob" id="dob"></td>
+						</tr>
+						<tr>
 							<th id="feedbackTopic">DATE</th>
 							<td><input type="date" name="date" id="date"></td>
 						</tr>
 						<tr>
-							<th id="feedbackTopic">DATE OF BIRTH</th>
-							<td><input type="date" name="dob" id="dob"></td>
+							<th id="feedbackTopic">APPOINMENT TIME</th>
+							<td><input type="time" name="time" id="time"></td>
 						</tr>
 						<tr>
 							<th id="feedbackTopic">GENDER</th>
