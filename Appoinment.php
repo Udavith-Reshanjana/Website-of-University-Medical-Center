@@ -58,7 +58,7 @@
 						</tr>
 						<tr>
 							<th id="symptoms">SYMPTOMS</th>
-							<td><textarea name="symptoms" id="symptoms" rows="10"></textarea></td>
+							<td><textarea name="symptom" id="symptom" rows="10"></textarea></td>
 						</tr>
 					</table>
 					

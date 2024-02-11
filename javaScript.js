@@ -75,7 +75,7 @@ function clearMeInFeedback() {
     var nameField = document.getElementById("Name");
     var personIDField = document.getElementById("personid");
     var dateField = document.getElementById("date");
-    var dobField = document.getElementById("date");
+    var dobField = document.getElementById("dob");
 
     nameField.value = "";
     personIDField.value = "";
@@ -95,7 +95,7 @@ function validateSubmitInFeedback() {
     var nameField = document.getElementById("Name");
     var personIDField = document.getElementById("personid");
     var dateField = document.getElementById("date");
-    var dobField = document.getElementById("date");
+    var dobField = document.getElementById("dob");
     var genderField = document.getElementsByName("gender");
 
     if (nameField.value === "") {
@@ -137,4 +137,25 @@ function validateSubmitInFeedback() {
     else {
         return true;
     }
+}
+
+// appoinment
+function clearMeInAppoinment() {
+    var nameField = document.getElementById("Name");
+    var personIDField = document.getElementById("personid");
+    var dateField = document.getElementById("date");
+    var dobField = document.getElementById("dob");
+    var contactnoField = document.getElementById("contactno");
+    var symptomsField = document.getElementById("symptom");
+
+    nameField.value = "";
+    personIDField.value = "";
+    dateField.value = "";
+    dobField.value = "";
+    contactnoField.value = "";
+    symptomsField.value = "";
+
+    clearRadioButtons("gender");
+
+    nameField.focus();
 }
