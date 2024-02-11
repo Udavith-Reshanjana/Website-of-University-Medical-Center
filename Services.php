@@ -28,14 +28,14 @@
 					<br>
 					<span class="stext">"Get your health on track with our free checkups! No cost, no worries. Book now!"</span>
 					<br>
-					<button id="seeMoreButton" onclick="">SEE MORE</button>
+					<button id="seeMoreButton" onclick="loadAppoint()">SEE MORE</button>
 				</div>
 				
 				<div class="Service"><img src="images/Services/4.png" alt="Services" id="img4" width="250" height="250" border="0" style="margin-top: 20px;">
 					<br><span class="stexthead">24/7 AMBULANCE</span>
 					<br><span class="stext">"Emergency help on standby! Our 24/7 ambulance service is just a call away."</span>
 					<br>
-					<button id="seeMoreButton" onclick="" style="margin-top: 27px; margin-bottom:102px;">SEE MORE</button>
+					<button id="seeMoreButton" onclick="loadAppoint()" style="margin-top: 27px; margin-bottom:102px;">SEE MORE</button>
 				</div>
 				
 				<div class="Service"><img src="images/Services/5.png" alt="Services" id="img5" width="250" height="250" border="0" style="margin-top: 20px;">
@@ -50,7 +50,7 @@
 					<hr color="maroon" width="100%">
 					<br><span class="stext">"Top - notch meds for you. Your health, our priority."</span>
 					<br>
-					<button id="seeMoreButton" onclick="" style="margin-top: 50px; margin-bottom:20px;">SEE MORE</button>
+					<button id="seeMoreButton" onclick="loadAppoint()" style="margin-top: 50px; margin-bottom:20px;">SEE MORE</button>
 				</div>
 			</div>
 		</div>
