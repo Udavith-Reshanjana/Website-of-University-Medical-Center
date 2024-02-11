@@ -48,6 +48,10 @@
 										<td>FEMALE</td>
 										<td><input type="radio" name="gender" id="female" value="Female" required></td>
 									</tr>
+									<tr>
+										<th id="feedbackTopic">SUGGESTIONS</th>
+										<td><textarea name="Suggesstions" id="Suggesstions" rows="10" cols="50" style="background-color: rgba(0, 0, 0, 0.1);"></textarea></td>
+									</tr>
 								</table>	
 							</td>
 						</tr>
