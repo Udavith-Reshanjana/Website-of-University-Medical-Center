@@ -1,4 +1,13 @@
 <?php
+// Include PHPMailer
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 // Database connection parameters
 $servername = "localhost";
 $username = "root";
@@ -27,7 +36,7 @@ $date = $_POST['date'];
 $time = $_POST['time'];
 $gender = $_POST['gender'];
 $contact_no = $_POST['contactno'];
-$symptoms = isset($_POST['symptom']) ? $_POST['symptom'] : null; // Check if symptoms were provided
+$symptoms = isset($_POST['symptom']) ? $_POST['symptom'] : null;
 
 // Prepare SQL statement to insert data into the database
 $sql = "INSERT INTO appoinment (appoinment_no, com_id, appoinment_date, appoinment_time, geder, email, symptoms) 
@@ -35,24 +44,36 @@ $sql = "INSERT INTO appoinment (appoinment_no, com_id, appoinment_date, appoinme
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
-    exit('<script>alert("Appointment made successfully. Appointment ID is: ' . $next_appointment_id . '"); window.location.href = "Appoinment.php";</script>');
+    // Create a new PHPMailer instance
+    $mail = new PHPMailer;
 
-    $_SESSION['login_error'] = true;
-        exit('<script>alert("Invalid username or password");window.location.href = "LogIn.html";</script>');
+    // SMTP configuration (This one is set only for gmail config)
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+	$mail->Username = 'your_email@example.com';
+    $mail->Password = 'your_password';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+
+    // Set From, To, Subject, and Body
+    $mail->setFrom('university_medical_center@example.com', 'University Medical Center');
+    $mail->addAddress($email, $person_id);
+    $mail->Subject = "Appointment booking Confirmation";
+    $mail->Body = "Your appointment has been successfully booked. Appointment ID is: $next_appointment_id\n";
+    $mail->Body .= "Appointment Date: $date\n";
+    $mail->Body .= "Appointment Time: $time\n";
+    $mail->Body .= "Gender: $gender\n";
+    $mail->Body .= "Contact Number: $contact_no\n";
+    $mail->Body .= "Symptoms: " . ($symptoms ? $symptoms : "None provided") . "\n";
+
     // Send email
-    // $to = $email;
-    // $subject = "Appointment Confirmation";
-    // $message = "Your appointment has been successfully booked. Appointment ID is: " . $next_appointment_id . "\n";
-    // $message .= "Appointment Date: " . $date . "\n";
-    // $message .= "Appointment Time: " . $time . "\n";
-    // $message .= "Gender: " . $gender . "\n";
-    // $message .= "Contact Number: " . $contact_no . "\n";
-    // $message .= "Symptoms: " . ($symptoms ? $symptoms : "None provided") . "\n";
-
-    // $headers = "From: your_email@example.com" . "\r\n" .
-    //            "CC: another_email@example.com";
-
-    // mail($to, $subject, $message, $headers);
+    if ($mail->send()) {
+        exit('<script>alert("Appointment made successfully. Appointment ID is: ' . $next_appointment_id . '"); window.location.href = "Appoinment.php";</script>');
+    } else {
+        echo 'Email could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    }
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
