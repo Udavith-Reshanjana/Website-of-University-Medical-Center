@@ -74,6 +74,6 @@ echo '<footer>
                 </tr>
             </table>								
         </p>
-        <p id="copyrightsTxt">&copy; 2024 <strong>University of Kelaniya</strong>, Designed By Group 03</p>
+        <p id="copyrightsTxt">&copy; 2024 <strong>University of Kelaniya</strong>, Designed By Group 01</p>
         </footer>';
 ?>
