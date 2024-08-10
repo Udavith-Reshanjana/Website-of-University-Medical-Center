@@ -233,6 +233,9 @@ function validateSubmitInAppointment() {
     var dobField = document.getElementById("dob");
     var contactnoField = document.getElementById("contactno");
     var feedbackTimeField = document.getElementById("time");
+	
+	var genderMale = document.getElementById("male");
+    var genderFemale = document.getElementById("female");
 
     if (nameField.value === "") {
         alert("Please enter your name !!!");
@@ -253,7 +256,7 @@ function validateSubmitInAppointment() {
         return false;
     } 
     else if (!isValidEmail(emailField.value)) {
-        alert("Please enter a valid person ID with pattern abc@stu.kln.ac.lk or abc@kln.ac.lk !!!");
+        alert("Please enter a valid email with pattern abc@stu.kln.ac.lk or abc@kln.ac.lk !!!");
         emailField.style.backgroundColor = "#ff9999";
         emailField.focus();
         return false;
@@ -281,7 +284,12 @@ function validateSubmitInAppointment() {
         dobField.style.backgroundColor = "#ff9999";
         dobField.focus();
         return false;
-    } 
+    }
+	else if (!genderMale.checked && !genderFemale.checked) {
+        alert("Please select your gender !!!");
+        genderMale.focus(); // Focus on the first radio button as an indicator.
+        return false;
+    }	
     else if (contactnoField.value === "") {
         alert("Please enter the contact number !!!");
         contactnoField.style.backgroundColor = "#ff9999";

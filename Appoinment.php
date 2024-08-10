@@ -50,10 +50,10 @@
 							<td>
 								<table style="width: 20%; margin-top: 10px;" >
 									<tr>
-										<td><input type="radio" name="gender" id="male" value="Male" required></td>
+										<td><input type="radio" name="gender" id="male" value="Male"></td>
 										<td><div class="gender">MALE</div></td>
 										
-										<td><input type="radio" name="gender" id="female" value="Female" required></td>
+										<td><input type="radio" name="gender" id="female" value="Female"></td>
 										<td><div class="gender">FEMALE</div></td>
 										
 									</tr>
