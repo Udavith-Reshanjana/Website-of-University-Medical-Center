@@ -42,11 +42,11 @@
 								<table style="width: 20%; margin-top: 10px;">
 									<tr>
 										<td>MALE</td>
-										<td><input type="radio" name="gender" id="male" value="Male" required></td>
+										<td><input type="radio" name="gender" id="male" value="Male"></td>
 									</tr>
 									<tr>
 										<td>FEMALE</td>
-										<td><input type="radio" name="gender" id="female" value="Female" required></td>
+										<td><input type="radio" name="gender" id="female" value="Female"></td>
 									</tr>
 								</table>	
 							</td>
@@ -78,75 +78,75 @@
 						<tr>
 							<td class="feedbackT">Doctor Knowledge</td>
 							<td>
-								<input type="radio" name="DoctorKnowledge" id="dknow" value="1" required>
+								<input type="radio" name="DoctorKnowledge" id="dknow" value="1">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKnowledge" id="dknow" value="2" required>
+								<input type="radio" name="DoctorKnowledge" id="dknow" value="2">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKnowledge" id="dknow" value="3" required>
+								<input type="radio" name="DoctorKnowledge" id="dknow" value="3">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKnowledge" id="dknow" value="4" required>
+								<input type="radio" name="DoctorKnowledge" id="dknow" value="4">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKnowledge" id="dknow" value="5" required>
+								<input type="radio" name="DoctorKnowledge" id="dknow" value="5">
 							</td>
 						</tr>
 
 						<tr>
 							<td class="feedbackT">Doctor Kindness</td>
 							<td>
-								<input type="radio" name="DoctorKindness" id="dkind" value="1" required>
+								<input type="radio" name="DoctorKindness" id="dkind" value="1">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKindness" id="dkind" value="2" required>
+								<input type="radio" name="DoctorKindness" id="dkind" value="2">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKindness" id="dkind" value="3" required>
+								<input type="radio" name="DoctorKindness" id="dkind" value="3">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKindness" id="dkind" value="4" required>
+								<input type="radio" name="DoctorKindness" id="dkind" value="4">
 							</td>
 							<td>
-								<input type="radio" name="DoctorKindness" id="dkind" value="5" required>
+								<input type="radio" name="DoctorKindness" id="dkind" value="5">
 							</td>
 						</tr>
 
 						<tr>
 							<td class="feedbackT">Waiting Time</td>
 							<td>
-								<input type="radio" name="WaitingTime" id="wtime" value="1" required>
+								<input type="radio" name="WaitingTime" id="wtime" value="1">
 							</td>
 							<td>
-								<input type="radio" name="WaitingTime" id="wtime" value="2" required>
+								<input type="radio" name="WaitingTime" id="wtime" value="2">
 							</td>
 							<td>
-								<input type="radio" name="WaitingTime" id="wtime" value="3" required>
+								<input type="radio" name="WaitingTime" id="wtime" value="3">
 							</td>
 							<td>
-								<input type="radio" name="WaitingTime" id="wtime" value="4" required>
+								<input type="radio" name="WaitingTime" id="wtime" value="4">
 							</td>
 							<td>
-								<input type="radio" name="WaitingTime" id="wtime" value="5" required>
+								<input type="radio" name="WaitingTime" id="wtime" value="5">
 							</td>
 						</tr>
 						<tr>
 							<td class="feedbackT">Hygene</td>
 							<td>
-								<input type="radio" name="Hygene" id="hygenee" value="1" required>
+								<input type="radio" name="Hygene" id="hygenee" value="1">
 							</td>
 							<td>
-								<input type="radio" name="Hygene" id="hygenee" value="2" required>
+								<input type="radio" name="Hygene" id="hygenee" value="2">
 							</td>
 							<td>
-								<input type="radio" name="Hygene" id="hygenee" value="3" required>
+								<input type="radio" name="Hygene" id="hygenee" value="3">
 							</td>
 							<td>
-								<input type="radio" name="Hygene" id="hygenee" value="4" required>
+								<input type="radio" name="Hygene" id="hygenee" value="4">
 							</td>
 							<td>
-								<input type="radio" name="Hygene" id="hygenee" value="5" required>
+								<input type="radio" name="Hygene" id="hygenee" value="5">
 							</td>
 						</tr>
 					</table>

@@ -160,18 +160,20 @@ function validateSubmitInFeedback() {
     var dateField = document.getElementById("date");
     var dobField = document.getElementById("dob");
 
+    var genderMale = document.getElementById("male");
+    var genderFemale = document.getElementById("female");
+
+    var doctorKnowledgeFields = document.getElementsByName("DoctorKnowledge");
+    var doctorKindnessFields = document.getElementsByName("DoctorKindness");
+    var waitingTimeFields = document.getElementsByName("WaitingTime");
+    var hygeneFields = document.getElementsByName("Hygene");
+
     if (nameField.value === "") {
         alert("Please enter your name !!!");
         nameField.style.backgroundColor = "#ff9999";
         nameField.focus();
         return false;
     } 
-    else if (!isValidName(nameField.value)) {
-        alert("Please enter a valid name !!!");
-        nameField.style.backgroundColor = "#ff9999";
-        nameField.focus();
-        return false;
-    }
     else if (personIDField.value === "") {
         alert("Please enter your person ID !!!");
         personIDField.style.backgroundColor = "#ff9999";
@@ -196,10 +198,46 @@ function validateSubmitInFeedback() {
         dobField.focus();
         return false;
     } 
+    else if (!genderMale.checked && !genderFemale.checked) {
+        alert("Please select your gender !!!");
+        genderMale.focus();
+        return false;
+    }
+    else if (!isRadioGroupChecked(doctorKnowledgeFields)) {
+        alert("Please rate the Doctor's Knowledge !!!");
+        doctorKnowledgeFields[0].focus();
+        return false;
+    } 
+    else if (!isRadioGroupChecked(doctorKindnessFields)) {
+        alert("Please rate the Doctor's Kindness !!!");
+        doctorKindnessFields[0].focus();
+        return false;
+    } 
+    else if (!isRadioGroupChecked(waitingTimeFields)) {
+        alert("Please rate the Waiting Time !!!");
+        waitingTimeFields[0].focus();
+        return false;
+    } 
+    else if (!isRadioGroupChecked(hygeneFields)) {
+        alert("Please rate the Hygiene !!!");
+        hygeneFields[0].focus();
+        return false;
+    } 
     else {
         return true;
     }
 }
+
+function isRadioGroupChecked(radioGroup) {
+    for (var i = 0; i < radioGroup.length; i++) {
+        if (radioGroup[i].checked) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
 
 // appoinment
 function clearMeInAppoinment() {
@@ -287,7 +325,7 @@ function validateSubmitInAppointment() {
     }
 	else if (!genderMale.checked && !genderFemale.checked) {
         alert("Please select your gender !!!");
-        genderMale.focus(); // Focus on the first radio button as an indicator.
+        genderMale.focus();
         return false;
     }	
     else if (contactnoField.value === "") {
